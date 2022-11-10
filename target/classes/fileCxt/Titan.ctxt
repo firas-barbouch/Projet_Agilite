@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Titan
+comment0.text=\r\n\ D\u00E9crivez\ votre\ classe\ Titan\ ici.\r\n\r\n\ @author\ (votre\ nom)\r\n\ @version\ (un\ num\u00E9ro\ de\ version\ ou\ une\ date)\r\n
+comment1.params=taille\ age
+comment1.target=Titan(double,\ int)
+comment1.text=\r\n\ Constructeur\ d'objets\ de\ classe\ Titan\r\n
+comment2.params=
+comment2.target=double\ getTaille()
+comment2.text=\r\n\ Un\ exemple\ de\ m\u00E9thode\ -\ remplacez\ ce\ commentaire\ par\ le\ v\u00F4tre\r\n\r\n\ @param\ \ y\ \ \ le\ param\u00E8tre\ de\ la\ m\u00E9thode\r\n\ @return\ \ \ \ \ la\ somme\ de\ x\ et\ de\ y\r\n
+comment3.params=
+comment3.target=int\ getAge()
+comment4.params=taille
+comment4.target=void\ setTaille(double)
+comment5.params=age
+comment5.target=void\ setAge(int)
+numComments=6

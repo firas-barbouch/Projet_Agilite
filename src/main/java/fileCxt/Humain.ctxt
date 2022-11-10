@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Humain
+comment0.text=\r\n\ D\u00E9crivez\ votre\ classe\ Humain\ ici.\r\n\r\n\ @author\ (votre\ nom)\r\n\ @version\ (un\ num\u00E9ro\ de\ version\ ou\ une\ date)\r\n
+comment1.params=nom\ prenom
+comment1.target=Humain(java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Constructeur\ d'objets\ de\ classe\ Humain\r\n
+comment2.params=t
+comment2.target=void\ setFuturTitan(Titan)
+comment3.params=
+comment3.target=Titan\ getTitan()
+comment4.params=
+comment4.target=java.lang.String\ getNom()
+comment5.params=
+comment5.target=java.lang.String\ getPrenom()
+comment6.params=
+comment6.target=double\ getTailleFuturTitan()
+numComments=7
