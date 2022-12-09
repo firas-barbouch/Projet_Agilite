@@ -13,24 +13,45 @@ public class InteractionTest {
 	private Titan t1=new Titan(20,5);
 	private Humain h2=new Humain("Erwin", "SMITH");
 	private Titan t2=new Titan(15,8);
+	private Humain h3= new Humain("Reiner", "DOE");
+	private Titan t3=new Titan(20,5);
 	
 	
-	@Given(": Un titan veut se battre contre un titan")
-	public void un_titan_veut_se_battre_contre_un_titan() {
+	@Given(": Un titanA veut se battre contre un titanB")
+	public void un_titanA_veut_se_battre_contre_un_titanB() {
 	    this.h1=new Humain("Eren", "JAEGER");
 	    this.h2=new Humain("Erwin", "SMITH");
 	    this.t1=new Titan(20,5);
 	    this.t2=new Titan(15,8);		
 	}
 
-	@When(": Un titan attaque un autre titan")
-	public void un_titan_attaque_un_autre_titan() {
+	@When(": Un titanA attaque un autre titanB")
+	public void un_titanA_attaque_un_autre_titanB() {
 	    this.t1.attaque(t2);
 	}
 
-	@Then(": Le titan attaqué perd des points equivalent à la force du titan attaquant")
-	public void le_titan_attaqué_perd_des_points_equivalent_à_la_force_du_titan_attaquant() {
+	@Then(": Le titanA attaqué perd des {int} equivalent à la {int} du titanB attaquant")
+	public void le_titanA_attaqué_perd_des_equivalent_à_la_du_titanB_attaquant(Integer int1, Integer int2) {
 	    assertEquals(t2.getPV(), 120);
+	}
+	
+	@Given(": Un titanB veut se battre contre un titanC")
+	public void un_titanB_veut_se_battre_contre_un_titanC() {
+		this.h3 = new Humain("Reiner", "DOE");
+	    this.t3=new Titan(20,5);
+
+	}
+	
+	@When(": Un titanB attaque un autre titanC")
+	public void un_titanB_attaque_un_autre_titanC() {
+	    // Write code here that turns the phrase above into concrete actions
+	    this.t2.attaque(t3);
+	}
+	
+	@Then(": Le titanB attaqué perd des {int} equivalent à la {int} du titanC attaquant")
+	public void le_titanB_attaqué_perd_des_equivalent_à_la_du_titanC_attaquant(Integer int1, Integer int2) {
+	    // Write code here that turns the phrase above into concrete actions
+	    assertEquals(t2.getPV(), 80);
 	}
 
 	@Given(": Lorsqu'un humain souhaite transférer son titan à un autre humain")

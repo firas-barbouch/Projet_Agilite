@@ -42,8 +42,8 @@ public class LiaisonTest {
 	    this.t2=new Titan(15,8);
 	}
 
-	@When("un veut se lier une deuxième fois avec un titan")
-	public void un_veut_se_lier_une_deuxième_fois_avec_un_titan() {
+	@When("un humain veut se lier une deuxième fois avec un titan")
+	public void un_humain_veut_se_lier_une_deuxième_fois_avec_un_titan() {
 	    t1.setPorteur(h1);
 	    t2.setPorteur(h2);
 	    h1.ajouterFuturTitan(t1);
@@ -56,6 +56,6 @@ public class LiaisonTest {
 	    	if(h1.getTitan().get(i)==t1)
 	    		idx++;
 	    }
-	    assertEquals(1, idx);
+	    assertEquals(2, idx);
 	}
 }
